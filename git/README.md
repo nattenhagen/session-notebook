@@ -28,7 +28,9 @@ git push -u origin main
 
 (wenn das repo schon existiert und schon mit GitHub verknüpft ist)
 
+```
 git add .
+```
 
 alternativ: git add --all
 
@@ -42,31 +44,33 @@ git push
 
 git switch -c feature/feature-name
 
-schreibt den Code für das feature
+(ich wechsel den Branch und erstelle einen neuen -c = create - feature/feature name ist praktisch, wenn wir in "Ordnern" arbeiten, also einen Ordner nur um features zu bearbeiten oder bugs)
+
+nächster Schritt --> schreibt den Code für das feature
+
 git add .
 
-git commit -m "another great commit message"
+git commit -m "Code für das Feature Branch"
 
 git push -u origin feature/feature-name
 
-nach erfolgreichem PR + merge auf GitHub
+nach erfolgreichem PR (Pull Request) + merge auf GitHub (Review Prozess!!!)
 
-git switch main
+git switch main (jetzt bin ich wieder lokal, um weiterzuarbeiten nachdem alle Änderungen greviewt wurden und gemergt)
 
 git pull
 
 ein existierendes Repo auf GitHub lokal bearbeiten
-(am Beispiel eures Studirepos)
 
 git clone git@github.com:neuefische/hh-web-24-2.git
 
-git switch -c branchname create a new branch and switch to it
+(lade dir ein Repository von Github runter und verbinde es direkt mit remote)
 
-git switch branchname switch branches
+git switch -c "branchname" create a new branch and switch to it
 
-git branch list your branches
-git branch -a list all branches (local and remote)
+git switch "branchname" --> switch branches
 
-git branch -d branchname delete a branch
+git branch --> list your branches
+git branch -a --> list all branches (local and remote)
 
-abcd
+git branch -d "branchname" --> delete a branch
